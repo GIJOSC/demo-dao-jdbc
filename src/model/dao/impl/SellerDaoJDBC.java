@@ -5,8 +5,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.mysql.jdbc.PreparedStatement;
-
 import db.DB;
 import db.DbException;
 import model.dao.SellerDao;
@@ -17,7 +15,7 @@ public class SellerDaoJDBC implements SellerDao {
 	
 	private Connection conn;
 	
-	public  SellerDaoJDBC(Connection connection) {
+	public  SellerDaoJDBC(Connection conn) {
 		this.conn = conn;
 	}
 
